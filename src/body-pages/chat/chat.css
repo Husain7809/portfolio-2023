@@ -1,0 +1,27 @@
+.chat-area {
+    background-color: #222327;
+}
+
+.chat {
+    max-height: 46rem;
+    min-height: 46rem;
+}
+
+.chat-user {
+    background-color: #131314;
+}
+
+input {
+    background-color: #131314;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.chat img {
+    width: 42px;
+    height: 42px;
+    user-select: none;
+}
