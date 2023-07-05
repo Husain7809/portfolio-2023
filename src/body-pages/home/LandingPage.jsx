@@ -26,7 +26,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="mt-3 fav-msg">
-        <p>I love creating webapps using javascript!</p>
+        <p>I love creating webapps using javascript! </p>
       </div>
     </div >
   )
