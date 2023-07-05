@@ -10,16 +10,17 @@ import Blog from './body-pages/blog/Blog';
 import Contact from './body-pages/contact-us/Contact';
 import Chat from './body-pages/chat/Chat';
 import Header from './header-music/Header';
+
 function App() {
 
   return (
     <BrowserRouter>
+      <Header />
       <div className="grid grid-cols-4">
         <div className="">
           <NavBar />
         </div>
         <div className="col-span-3">
-          <Header />
           <Routes>
             <Route path='/' element={<LandingPage />} />
             <Route path='/skill' element={<Skill />} />
