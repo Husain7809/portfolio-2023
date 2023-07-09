@@ -1,9 +1,9 @@
-import { FaLinkedin, FaTwitter, FaGithub } from '../../../node_modules/react-icons/fa6/index.esm';
+import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
-const LandingPage = () => {
+const Profile = () => {
   return (
     <div className='mt-5 about'>
-      < div className="text-4xl title" >
+      <div className="text-4xl title" >
         <h1>Mohammad Husain</h1>
       </div >
       <div className="mt-2 text-lg div">
@@ -32,4 +32,4 @@ const LandingPage = () => {
   )
 }
 
-export default LandingPage
+export default Profile

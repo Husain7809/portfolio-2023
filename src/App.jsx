@@ -1,33 +1,35 @@
 import './App.css'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import NavBar from './navBar-left/NavBar';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import LandingPage from './body-pages/home/LandingPage';
-import Skill from './body-pages/skill/Skill';
-import Projects from './body-pages/project/Projects';
-import Blog from './body-pages/blog/Blog';
-import Contact from './body-pages/contact-us/Contact';
-import Chat from './body-pages/chat/Chat';
-import Header from './header-music/Header';
+import './global/style.css';
+import NavBar from "./pages/NavBar";
+import Music from './pages/Music';
+import ContactUs from './pages/ContactUs';
+import Blog from './pages/Blog';
+import Skill from './pages/Skill';
+import Project from './pages/Project';
+import Profile from './pages/Profile';
+import Chat from './pages/Chat';
+
+
 
 function App() {
-
   return (
     <BrowserRouter>
-      <Header />
+      <Music />
       <div className="grid grid-cols-4">
         <div className="">
           <NavBar />
         </div>
         <div className="col-span-3">
           <Routes>
-            <Route path='/' element={<LandingPage />} />
+            <Route path='/' element={<Profile />} />
             <Route path='/skill' element={<Skill />} />
-            <Route path='/projects' element={<Projects />} />
+            <Route path='/projects' element={<Project />} />
             <Route path='/my-blog' element={<Blog />} />
             <Route path='/chat' element={<Chat />} />
-            <Route path='/contact-me' element={<Contact />} />
+            <Route path='/contact-me' element={<ContactUs />} />
           </Routes>
         </div>
       </div>
