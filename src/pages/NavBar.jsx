@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import './navbar.css';
 
 const NavBar = () => {
   return (
@@ -7,10 +6,11 @@ const NavBar = () => {
       <nav className="flex flex-col w-56 text-white">
         <div className="flex items-center justify-center">
           <a className="rounded-full profile" href="/">
-            <img src='../../public/assets/cartoon.png' alt="logo" />
+            {/* <img src='../../public/assets/cartoon.png' alt="logo" /> */}
+            <img src='https://cdn.hashnode.com/res/hashnode/image/upload/v1612774146044/LOmtsiohU.jpeg?w=256&h=256&fit=crop&crop=entropy&auto=compress,format&format=webp' alt="logo" />
           </a>
         </div>
-        <div className="flex flex-col mt-5 ml-5 text-left nav-bar">
+        <div className="flex flex-col mt-10 ml-5 text-left nav-bar">
           <ul className="flex flex-col space-y-4">
             <NavLink to='/' className='nav-link'>Home</NavLink>
             <NavLink to='/skill' className='nav-link'>Skills</NavLink>
@@ -21,7 +21,6 @@ const NavBar = () => {
           </ul>
         </div>
       </nav >
-
     </>
   )
 }

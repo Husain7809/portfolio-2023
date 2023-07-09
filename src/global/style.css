@@ -1,0 +1,76 @@
+.nav-link {
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  padding-left: 1rem;
+  /* cursor: pointer; */
+}
+
+.nav-link:hover {
+  transition: 0.2s;
+  background-color: #211E48;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.nav-bar ul li:hover {
+  transition: 0.2s;
+  /* background-color: #111827; */
+  background-color: #211E48;
+  border-radius: 10px;
+}
+
+.active {
+  transition: 0.2s;
+  background-color: #211E48;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 1px red;
+}
+
+/* contact-us */
+.email,
+.conffee,
+.stripe {
+  background-color: #211E48;
+  padding: 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+/* chat */
+.chat-area {
+  background-color: #222327;
+}
+
+.chat {
+  max-height: 46rem;
+  min-height: 46rem;
+}
+
+.chat-user {
+  background-color: #131314;
+}
+
+input {
+  background-color: #131314;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.chat img {
+  width: 42px;
+  height: 42px;
+  user-select: none;
+}
