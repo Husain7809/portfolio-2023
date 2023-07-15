@@ -1,41 +1,42 @@
-import './App.css'
+import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './global/style.css';
-import NavBar from "./pages/NavBar";
-import Music from './pages/Music';
-import ContactUs from './pages/ContactUs';
-import Blog from './pages/Blog';
-import Skill from './pages/Skill';
-import Project from './pages/Project';
-import Profile from './pages/Profile';
-import Chat from './pages/Chat';
-
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+const NavBar = lazy(() => import('./pages/NavBar'));
+const Music = lazy(() => import('./pages/Music'));
+const ContactUs = lazy(() => import('./pages/ContactUs'));
+const Blog = lazy(() => import('./pages/Blog'));
+const Skill = lazy(() => import('./pages/Skill'));
+const Project = lazy(() => import('./pages/Project'));
+const Profile = lazy(() => import('./pages/Profile'));
+const Chat = lazy(() => import('./pages/Chat'));
+import Loader from "./pages/Loader";
 
 function App() {
+
   return (
-    <BrowserRouter>
+    <Router>
       <Music />
       <div className="grid grid-cols-4">
         <div className="">
           <NavBar />
         </div>
         <div className="col-span-3">
-          <Routes>
-            <Route path='/' element={<Profile />} />
-            <Route path='/skill' element={<Skill />} />
-            <Route path='/projects' element={<Project />} />
-            <Route path='/my-blog' element={<Blog />} />
-            <Route path='/chat' element={<Chat />} />
-            <Route path='/contact-me' element={<ContactUs />} />
-          </Routes>
+          <Suspense fallback={<Loader />}>
+            <Routes>
+              <Route path="/" element={<Profile />} />
+              <Route path="/skill" element={<Skill />} />
+              <Route path="/projects" element={<Project />} />
+              <Route path="/my-blog" element={<Blog />} />
+              <Route path="/chat" element={<Chat />} />
+              <Route path="/contact-me" element={<ContactUs />} />
+            </Routes>
+          </Suspense>
         </div>
       </div>
       <ToastContainer draggable={false} />
-    </BrowserRouter >
-  )
+    </Router >
+  );
 }
 
-export default App
+export default App;

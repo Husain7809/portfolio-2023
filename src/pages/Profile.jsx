@@ -7,7 +7,7 @@ const Profile = () => {
         <h1>Mohammad Husain</h1>
       </div >
       <div className="mt-2 text-lg div">
-        <p>Hello!  I'm Mohammed Hussain, a dedicated software developer specializing in Node.js. I have a strong background in server-side development.</p>
+        <p>👋 Hello! I'm Mohammed Husain, a dedicated software developer specializing in Node.js. I have a strong background in server-side development.</p>
       </div>
       <div className="flex items-center mt-7 w-fit h-fit social-profile">
         <div className="profile-img">

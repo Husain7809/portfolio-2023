@@ -6,6 +6,9 @@ const Music = () => {
 
   useEffect(() => {
     return () => {
+      const musicObj = "https://open.spotify.com/embed/playlist/6NfjWGfT7xHRraFUte9R65?utm_source=generator&theme=0;"
+      console.log(musicObj);
+
       ShowToast({ text: 'Click spacebar to ' })
     }
 
@@ -18,7 +21,7 @@ const Music = () => {
         id="spotify-iframe"
         className='flex'
         title="Husain"
-        src="https://open.spotify.com/embed/playlist/6NfjWGfT7xHRraFUte9R65?utm_source=generator&theme=0"
+        src="https://open.spotify.com/embed/playlist/6NfjWGfT7xHRraFUte9R65?utm_source=generator&theme=0&autoplay=true"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture;"
         loading="lazy"
       ></iframe>

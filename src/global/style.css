@@ -1,31 +1,28 @@
+:root {
+  --main-bg-color: #111827;
+  --main-text-color: #fff;
+}
+
 .nav-link {
   border-radius: 10px;
   padding: 10px;
   font-size: 1.2rem;
   margin-left: 2rem;
   padding-left: 1rem;
-  /* cursor: pointer; */
 }
 
 .nav-link:hover {
   transition: 0.2s;
-  background-color: #211E48;
+  background-color: var(--main-bg-color);
   border-radius: 10px;
   padding: 10px;
   font-size: 1.2rem;
   padding-left: 1rem;
 }
 
-.nav-bar ul li:hover {
-  transition: 0.2s;
-  /* background-color: #111827; */
-  background-color: #211E48;
-  border-radius: 10px;
-}
-
 .active {
   transition: 0.2s;
-  background-color: #211E48;
+  background-color: var(--main-bg-color);
 }
 
 .profile img {
@@ -40,7 +37,7 @@
 .email,
 .conffee,
 .stripe {
-  background-color: #211E48;
+  background-color: var(--main-bg-color);
   padding: 2rem;
   border-radius: 10px;
   font-size: 1rem;
@@ -73,4 +70,60 @@ input {
   width: 42px;
   height: 42px;
   user-select: none;
+}
+
+.tag {
+  background-color: #211E48;
+  color: #fff;
+  margin: 10px 10px;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.tag:hover {
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
+/* loading css */
+.shapes-8 {
+  width: 40px;
+  height: 40px;
+  color: #f03355;
+  position: relative;
+  background: radial-gradient(10px, currentColor 94%, #0000);
+}
+
+.shapes-8:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background:
+    radial-gradient(9px at bottom right, #0000 94%, currentColor) top left,
+    radial-gradient(9px at bottom left, #0000 94%, currentColor) top right,
+    radial-gradient(9px at top right, #0000 94%, currentColor) bottom left,
+    radial-gradient(9px at top left, #0000 94%, currentColor) bottom right;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  animation: sp8 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+
+@keyframes sp8 {
+  33% {
+    inset: -10px;
+    transform: rotate(0deg)
+  }
+
+  66% {
+    inset: -10px;
+    transform: rotate(90deg)
+  }
+
+  100% {
+    inset: 0;
+    transform: rotate(90deg)
+  }
 }
