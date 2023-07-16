@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 const NavBar = () => {
   return (
     <>
-      <nav className="flex flex-col w-56 text-white">
+      <nav className="fixed flex flex-col w-56 text-white">
         <div className="flex items-center justify-center">
           <a className="rounded-full profile" href="/">
             {/* <img src='../../public/assets/cartoon.png' alt="logo" /> */}
