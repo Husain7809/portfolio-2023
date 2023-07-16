@@ -68,8 +68,8 @@ export const projectData = [
   {
     title: "Grocery Backend Api",
     position: "Software Developer",
-    role: "Frontend Developer",
-    technology: "React js",
+    role: "Backend Engineer",
+    technology: "Nodejs,Nestjs, Mysql",
     domain: "https://github.com/Husain7809/grocery_backend",
     git_link: "https://github.com/Husain7809/grocery_backend",
   },

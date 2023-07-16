@@ -16,7 +16,7 @@ const Music = () => {
 
   return (
 
-    <div className="container flex justify-center mb-10">
+    <div className="container flex justify-center">
       <iframe
         id="spotify-iframe"
         className='flex'
