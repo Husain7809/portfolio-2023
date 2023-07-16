@@ -1,42 +1,53 @@
 import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 const NavBar = lazy(() => import('./pages/NavBar'));
 const Music = lazy(() => import('./pages/Music'));
 const ContactUs = lazy(() => import('./pages/ContactUs'));
-const Blog = lazy(() => import('./pages/Blog'));
 const Skill = lazy(() => import('./pages/Skill'));
 const Project = lazy(() => import('./pages/Project'));
 const Profile = lazy(() => import('./pages/Profile'));
 const Chat = lazy(() => import('./pages/Chat'));
-import Loader from "./pages/Loader";
+import Loader from './pages/Loader';
+import LoadingBar from 'react-top-loading-bar';
 
-function App() {
+
+const App = () => {
+  const [loading, setLoading] = useState(true)
+  const [progress, setProgress] = useState(0)
 
   return (
-    <Router>
-      <Music />
-      <div className="grid grid-cols-4">
-        <div className="">
-          <NavBar />
+    <BrowserRouter>
+      <>
+        <div className='text-center not_support'>
+          <img src="../../public/assets/not_support.jpg" className='flex items-center m-auto' alt="Screen not support" />
+          <p className='mt-4'>Please rotate your device</p>
         </div>
-        <div className="col-span-3">
-          <Suspense fallback={<Loader />}>
-            <Routes>
-              <Route path="/" element={<Profile />} />
-              <Route path="/skill" element={<Skill />} />
-              <Route path="/projects" element={<Project />} />
-              <Route path="/my-blog" element={<Blog />} />
-              <Route path="/chat" element={<Chat />} />
-              <Route path="/contact-me" element={<ContactUs />} />
-            </Routes>
-          </Suspense>
+        <div className='body_section'>
+          <Music />
+          <div className="grid grid-cols-4">
+            <div className="nav_section">
+              <NavBar />
+            </div>
+            <div className="col-span-3">
+              <LoadingBar color='gold' height={3} transitionTime={300} loaderSpeed={500} waitingTime={300} progress={progress} onLoaderFinished={() => setProgress(0)} />
+              <Suspense fallback={<Loader />}>
+                <Routes>
+                  <Route path="/" element={<Profile setProgress={setProgress} />} />
+                  <Route path="/skill" element={<Skill setProgress={setProgress} />} />
+                  <Route path="/projects" element={<Project setProgress={setProgress} />} />
+                  <Route path="/chat" element={<Chat setProgress={setProgress} />} />
+                  <Route path="/contact-me" element={<ContactUs setProgress={setProgress} />} />
+                </Routes>
+              </Suspense>
+            </div>
+          </div>
         </div>
-      </div>
+      </>
       <ToastContainer draggable={false} />
-    </Router >
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

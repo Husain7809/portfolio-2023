@@ -9,7 +9,13 @@
 }
 
 body {
-    background-color: #000000;
+    /* background-color: #000000; */
+    background: linear-gradient(to bottom,
+            #000000,
+            #050505 50%,
+            #111010 50%,
+            #000000);
+    background-size: 100% 60px;
     color: #fff;
     box-sizing: border-box;
     user-select: none;
@@ -29,40 +35,19 @@ body {
     padding: 30px 20px;
 }
 
-/* .rotate-message {
+.not_support {
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation-name: rotateAnimation;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes rotateAnimation {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-
-    50% {
-        transform: translate(-50%, -50%) rotate(180deg);
-    }
-
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
 }
 
 @media (max-width: 768px) {
-    body {
+    .body_section {
         display: none;
     }
-}
 
-@media (max-width: 768px) {
-    .rotate-message {
+    .not_support {
         display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 11rem auto;
     }
-} */
+}

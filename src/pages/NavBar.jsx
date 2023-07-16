@@ -15,7 +15,6 @@ const NavBar = () => {
             <NavLink to='/' className='nav-link'>Home</NavLink>
             <NavLink to='/skill' className='nav-link'>Skills</NavLink>
             <NavLink to='/projects' className='nav-link'>Project</NavLink>
-            <NavLink to='/my-blog' className='nav-link'>Blog</NavLink>
             <NavLink to='/chat' className='nav-link'>Chat</NavLink>
             <NavLink to='/contact-me' className='nav-link'>Contact Me</NavLink>
           </ul>

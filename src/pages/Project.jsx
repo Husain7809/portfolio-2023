@@ -1,17 +1,18 @@
 import React, { useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
 
-const Project = () => {
+const Project = ({ setProgress }) => {
 
-  const navigate = useNavigate();
 
   useEffect(() => {
+    setProgress(10);
+    setTimeout(() => {
+      setProgress(100);
+    }, 100);
   }, [])
 
 
   return (
     <div>
-
       Projects
     </div>
   )

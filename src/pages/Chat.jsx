@@ -1,13 +1,21 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { toast } from 'react-toastify';
 
-const Chat = () => {
+const Chat = ({ setProgress }) => {
 
   const [message, setMessage] = useState(null);
   const chatMessage = () => {
     const message = document.getElementById('user-prompt');
     toast.error(message)
   }
+
+  useEffect(() => {
+    setProgress(10);
+    setTimeout(() => {
+      setProgress(100);
+    }, 100);
+  }, [])
+
 
   return (
     <div className='h-full rounded-md p-7 chat-area'>
