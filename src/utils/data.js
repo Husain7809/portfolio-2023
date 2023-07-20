@@ -36,7 +36,7 @@ export const projectData = [
     technology: "React js",
     domain: "https://github.com/Husain7809/WeatherApp",
     git_link: "https://github.com/Husain7809/WeatherApp",
-    image: "../../public/assets/Weather.png"
+    image: "Weather.png"
   },
   {
     title: "Portfolio website",
@@ -45,7 +45,7 @@ export const projectData = [
     technology: "Html, Css, Js",
     domain: "https://husain7809.github.io/New-PortFolio-Webiste/",
     git_link: "https://github.com/Husain7809/New-PortFolio-Webiste",
-    image: "../../public/assets/portfolio.png"
+    image: "portfolio.png"
   },
   {
     title: "News WebApp",
@@ -54,7 +54,7 @@ export const projectData = [
     technology: "Html & css , php",
     domain: "https://github.com/Husain7809/News-Site",
     git_link: "https://github.com/Husain7809/News-Site",
-    image: "../../public/assets/newssite.png"
+    image: "newssite.png"
   },
   {
     title: "Stock Management System",
@@ -63,7 +63,7 @@ export const projectData = [
     technology: "Asp.Net",
     domain: "http://www.stock.somee.com/",
     git_link: "https://github.com/Husain7809",
-    image: "../../public/assets/Stock.png"
+    image: "Stock.png"
   },
   {
     title: "Grocery Backend Api",

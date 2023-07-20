@@ -13,7 +13,7 @@ const Project = ({ setProgress }) => {
 
 
   return (
-    <section className='mt-4'>
+    <section className='mt-4 '>
       <h1 className='mb-4 text-4xl text-left md:text-center'>Projects</h1>
       <div className='grid w-full h-full grid-cols-1 mx-auto lg:grid-cols-2 md:w-fit'>
         {
@@ -22,7 +22,7 @@ const Project = ({ setProgress }) => {
               <div className='border-4 border-gray-500 shadow-lg project_section'>
                 {item.image ?
                   <div className="image">
-                    <img src={item.image} alt="project_image" />
+                    <img src={`../../public/assets/${item.image}`} alt="project_image" />
                   </div>
                   : ""
                 }
