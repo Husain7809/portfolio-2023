@@ -24,7 +24,6 @@ const App = () => {
           <p className='mt-4'>Please rotate your device</p>
         </div>
         <div className='body_section'>
-          <Music />
           <div className="grid grid-cols-4">
             <div className="nav_section">
               <NavBar />

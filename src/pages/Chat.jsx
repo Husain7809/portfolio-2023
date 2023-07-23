@@ -18,8 +18,8 @@ const Chat = ({ setProgress }) => {
 
 
   return (
-    <div className='h-full rounded-md p-7 chat-area'>
-      <div className="p-2 overflow-auto chat">
+    <div className='p-4 ml-16 rounded-md lg:ml-auto chat-area'>
+      <div className="p-2 chat">
         <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
           <img
             src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
@@ -39,8 +39,125 @@ const Chat = ({ setProgress }) => {
                 mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
           </p>
         </div>
+        <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
+          <img
+            src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
+            alt="icon" />
+          <p className='ml-6'>
+            Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj
+            {/* Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
+          </p>
+        </div>
+        <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
+          <img
+            src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
+            alt="icon" />
+          <p className='ml-6'>
+            Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj
+            {/* Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
+          </p>
+        </div>
+        <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
+          <img
+            src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
+            alt="icon" />
+          <p className='ml-6'>
+            Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj
+            {/* Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
+          </p>
+        </div>
+        <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
+          <img
+            src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
+            alt="icon" />
+          <p className='ml-6'>
+            Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj
+            {/* Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
+          </p>
+        </div>
+        <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
+          <img
+            src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
+            alt="icon" />
+          <p className='ml-6'>
+            Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj
+            {/* Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
+          </p>
+        </div>
+        <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
+          <img
+            src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
+            alt="icon" />
+          <p className='ml-6'>
+            Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj
+            {/* Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
+          </p>
+        </div>
+        <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
+          <img
+            src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
+            alt="icon" />
+          <p className='ml-6'>
+            Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj
+            {/* Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
+          </p>
+        </div>
+        <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
+          <img
+            src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
+            alt="icon" />
+          <p className='ml-6'>
+            Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj
+            {/* Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
+          </p>
+        </div>
+        <div className='flex items-center p-5 mb-3 rounded-md chat-user'>
+          <img
+            src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif"
+            alt="icon" />
+          <p className='ml-6'>
+            Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+            mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj
+            {/* Hello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadHello mohmmadHello mohmmadHello
+                mohmmadHello mohmmadHello mohmmadjsjjdjsjsdjsdj */}
+          </p>
+        </div>
       </div>
-      <div className="my-4 items-e nd input-user">
+      <div className="items-end my-4 input-user">
         <div className='flex send-area'>
           <input type="text"
             className='w-full px-5 py-4 leading-tight border shadow appearance-none rounded-3xl focus:outline-none'

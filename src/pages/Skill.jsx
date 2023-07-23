@@ -16,7 +16,7 @@ const Skill = ({ setProgress }) => {
   }
 
   return (
-    <div className="grid m-auto text-center md:w-fit lg:w-full lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 mt-28 skill_div">
+    <div className="grid overflow-auto text-center ml-14 lg:ml-auto lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 mt-28 skill_div">
       {skillData.map((item, index) => {
         return (
           <div

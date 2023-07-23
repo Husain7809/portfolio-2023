@@ -3,6 +3,10 @@
   --main-text-color: #fff;
 }
 
+body {
+  margin-top: 5rem !important;
+}
+
 .nav-link {
   border-radius: 10px;
   padding: 10px;
@@ -47,11 +51,15 @@
 /* chat */
 .chat-area {
   background-color: #222327;
+  margin: auto;
+  align-items: center;
 }
 
 .chat {
-  max-height: 46rem;
-  min-height: 46rem;
+  max-height: 40rem;
+  min-height: 40rem;
+  overflow: auto;
+
 }
 
 .chat-user {

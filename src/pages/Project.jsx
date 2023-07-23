@@ -13,7 +13,7 @@ const Project = ({ setProgress }) => {
 
 
   return (
-    <section className='mt-4 '>
+    <section className='m-auto mt-4 ml-10 overflow-auto lg:ml-auto' style={{ maxHeight: '50rem' }}>
       <h1 className='mb-4 text-4xl text-left md:text-center'>Projects</h1>
       <div className='grid w-full h-full grid-cols-1 mx-auto lg:grid-cols-2 md:w-fit'>
         {
