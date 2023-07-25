@@ -1,12 +1,18 @@
 import { useState, useEffect } from 'react'
-import { toast } from 'react-toastify';
+import { ShowErrorToast } from '../utils/Toast';
 
 const Chat = ({ setProgress }) => {
 
   const [message, setMessage] = useState(null);
-  const chatMessage = () => {
-    const message = document.getElementById('user-prompt');
-    toast.error(message)
+
+  const chatMessage = (e) => {
+    setMessage(e.target.value);
+  }
+
+  const sendMessage = (e) => {
+    e.preventDefault();
+    document.getElementById('user-prompt').value.trigger;
+    ShowErrorToast({ text: message })
   }
 
   useEffect(() => {
@@ -157,21 +163,22 @@ const Chat = ({ setProgress }) => {
           </p>
         </div>
       </div>
-      <div className="items-end my-4 input-user">
-        <div className='flex send-area'>
-          <input type="text"
-            className='w-full px-5 py-4 leading-tight border shadow appearance-none rounded-3xl focus:outline-none'
-            name="input" id="user-prompt" placeholder='Enter a prompt here' />
-          <span
-            className='flex items-center justify-center mx-2 leading-tight'>
-            <button
-              className='p-4 my-auto hover:bg-slate-800 send rounded-3xl' onClick={() => chatMessage()}>
-              <i className="fa fa-paper-plane" aria-hidden="true"></i>
-            </button>
-          </span>
+      <form>
+        <div className="items-end my-4 input-user">
+          <div className='flex send-area'>
+            <input type="text"
+              className='w-full px-5 py-4 leading-tight border shadow appearance-none rounded-3xl focus:outline-none'
+              name="input" id="user-prompt" placeholder='Enter a prompt here' onKeyUp={chatMessage} required />
+            <span
+              className='flex items-center justify-center mx-2 leading-tight'>
+              <button className='p-4 my-auto hover:bg-slate-800 send rounded-3xl' onClick={sendMessage}>
+                <i className="fa fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </span>
+          </div>
         </div>
-      </div>
-    </div>
+      </form>
+    </div >
   )
 }
 export default Chat
