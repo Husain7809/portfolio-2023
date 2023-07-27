@@ -5,10 +5,6 @@ const Chat = ({ setProgress }) => {
 
   const [message, setMessage] = useState(null);
 
-  const chatMessage = (e) => {
-    setMessage(e.target.value);
-  }
-
   const sendMessage = (e) => {
     e.preventDefault();
     document.getElementById('user-prompt').value.trigger;
@@ -168,7 +164,7 @@ const Chat = ({ setProgress }) => {
           <div className='flex send-area'>
             <input type="text"
               className='w-full px-5 py-4 leading-tight border shadow appearance-none rounded-3xl focus:outline-none'
-              name="input" id="user-prompt" placeholder='Enter a prompt here' onKeyUp={chatMessage} required />
+              name="input" id="user-prompt" placeholder='Enter a prompt here' value={message} onChange={(e) => setMessage(e.target.value)} required />
             <span
               className='flex items-center justify-center mx-2 leading-tight'>
               <button className='p-4 my-auto hover:bg-slate-800 send rounded-3xl' onClick={sendMessage}>
