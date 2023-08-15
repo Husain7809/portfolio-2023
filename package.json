@@ -23,6 +23,7 @@
     "@stripe/react-stripe-js": "^2.1.1",
     "@stripe/stripe-js": "^1.54.1",
     "@tanem/react-nprogress": "^5.0.44",
+    "axios": "^1.4.0",
     "dotenv": "^16.3.1",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
