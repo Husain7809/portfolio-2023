@@ -20,7 +20,12 @@ const Profile = ({ setProgress }) => {
       </div>
       <div className="flex items-center pt-10 text-center lg:ml-0 md:m-auto w-fit h-fit social-profile">
         <div className="profile-img">
+<<<<<<< Updated upstream
           <img src="../../dist/social-profile.jpg" style={{ width: '15rem', height: '15rem', borderRadius: '50%' }} alt="social" />
+=======
+
+          <img src="../../dist/images/social-profile.jpg" style={{ width: '15rem', height: '15rem', borderRadius: '50%' }} alt="social" />
+>>>>>>> Stashed changes
         </div>
         <div className="items-center ml-10 align-middle social-links" style={{ color: 'gray' }}>
           <div className="mb-3 text-xl linkedin-link">
