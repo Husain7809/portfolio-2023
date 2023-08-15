@@ -22,12 +22,7 @@ const Project = ({ setProgress }) => {
               <div className='border-4 border-gray-500 shadow-lg project_section'>
                 {item.image ?
                   <div className="image">
-<<<<<<< Updated upstream
-                    <img src={`../../dist/${item.image}`} alt="project_image" />
-=======
                     <img src={`../../dist/images/${item.image}`} alt="project_image" />
-
->>>>>>> Stashed changes
                   </div>
                   : ""
                 }
