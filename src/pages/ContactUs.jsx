@@ -25,7 +25,7 @@ const ContactUs = ({ setProgress }) => {
             Buy me a coffee!
           </div>
         </a>
-        <a href="/support-stripe" target="_blank" rel="noreferrer">
+        <a href="#" target="_blank" rel="noreferrer">
           <div className="text-center stripe mt-7 ">
             Support me through stripe!
           </div>

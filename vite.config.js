@@ -11,5 +11,5 @@ export default defineConfig({
     minify: true,
     outDir: 'dist',
   },
-  publicDir: 'assets',
+  publicDir: './public/assets',
 })
