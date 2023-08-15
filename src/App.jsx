@@ -20,7 +20,7 @@ const App = () => {
     <BrowserRouter>
       <>
         <div className='text-center not_support'>
-          <img src="../../public/assets/not_support.jpg" className='flex items-center m-auto' alt="Screen not support" />
+          <img src="./not_support.jpg" className='flex items-center m-auto' alt="Screen not support" />
           <p className='mt-4'>Please rotate your device</p>
         </div>
         <div className='body_section'>

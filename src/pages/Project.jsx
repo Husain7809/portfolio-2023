@@ -23,6 +23,7 @@ const Project = ({ setProgress }) => {
                 {item.image ?
                   <div className="image">
                     <img src={`../../dist/${item.image}`} alt="project_image" />
+
                   </div>
                   : ""
                 }
