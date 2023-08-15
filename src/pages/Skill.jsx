@@ -20,7 +20,7 @@ const Skill = ({ setProgress }) => {
       {skillData.map((item, index) => {
         return (
           <div
-            className="uppercase tag"
+            className="uppercase tag hover:bg-gray-700"
             key={index}
             onClick={() => showPopup(item.name.toUpperCase())}
           >
