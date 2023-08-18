@@ -5,7 +5,7 @@ const NavBar = () => {
     <>
       <nav className="flex flex-col w-56 text-white ">
         <div className="flex items-center justify-center">
-          <a className="rounded-full profile" href="/">
+          <a className="rounded-full profile" href="#">
             {/* <img src='../../public/images/cartoon.png' alt="logo" /> */}
             <img src='https://cdn.hashnode.com/res/hashnode/image/upload/v1612774146044/LOmtsiohU.jpeg?w=256&h=256&fit=crop&crop=entropy&auto=compress,format&format=webp' alt="logo" />
           </a>
