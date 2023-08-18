@@ -8,18 +8,6 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "precommit": "lint-staged",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn precommit"
-    }
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
