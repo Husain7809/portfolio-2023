@@ -7,4 +7,4 @@ npm run build
 
 
 #vercel deploy url
-https://mohammad-husain.vercel.app/
+https://m-husain.vercel.app/
