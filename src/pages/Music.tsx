@@ -7,12 +7,15 @@ const Music = () => {
   useEffect(() => {
     return () => {
       const musicObj = "https://open.spotify.com/embed/playlist/6NfjWGfT7xHRraFUte9R65?utm_source=generator&theme=0;"
-      console.log(musicObj);
-
-      ShowToast({ text: 'Click spacebar to ' })
+      ShowToast({ text: 'Click spacebar to open music' })
     }
 
   }, [])
+
+  window.addEventListener('keypress', (e) => {
+    if (e.which === 32) {
+    }
+  })
 
   return (
 
