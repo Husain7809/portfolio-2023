@@ -31,6 +31,7 @@ const App = () => {
             <div className="col-span-3">
               <LoadingBar color='gold' height={3} transitionTime={300} loaderSpeed={500} waitingTime={300} progress={progress} onLoaderFinished={() => setProgress(0)} />
               <Suspense fallback={<Loader />}>
+                <Music />
                 <Routes>
                   <Route path="/" element={<Profile setProgress={setProgress} />} />
                   <Route path="/skill" element={<Skill setProgress={setProgress} />} />
