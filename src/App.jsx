@@ -7,6 +7,7 @@ const Music = lazy(() => import('./pages/Music'));
 const ContactUs = lazy(() => import('./pages/ContactUs'));
 const Skill = lazy(() => import('./pages/Skill'));
 const Project = lazy(() => import('./pages/Project'));
+const ErrorPage = lazy(() => import('./pages/ErrorPage'));
 const Profile = lazy(() => import('./pages/Profile'));
 const Chat = lazy(() => import('./pages/Chat'));
 import Loader from './pages/Loader';
@@ -38,6 +39,7 @@ const App = () => {
                   <Route path="/projects" element={<Project setProgress={setProgress} />} />
                   <Route path="/chat" element={<Chat setProgress={setProgress} />} />
                   <Route path="/contact-me" element={<ContactUs setProgress={setProgress} />} />
+                  <Route path="*" element={<ErrorPage setProgress={setProgress} />} />
                 </Routes>
               </Suspense>
             </div>
